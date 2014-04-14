@@ -66,8 +66,8 @@
   <project name="CyanogenMod/android_external_giflib" path="external/giflib"/>
   <project name="CyanogenMod/android_external_gtest" path="external/gtest"/>
   <project name="CyanogenMod/android_external_harfbuzz" path="external/harfbuzz"/>
-  <project name="CyanogenMod/android_external_harfbuzz_ng" path="external/harfbuzz_ng"/>
-  <project name="CyanogenMod/android_external_icu4c" path="external/icu4c" remote="aosp"/>
+  <project path="external/harfbuzz_ng" name="platform/external/harfbuzz_ng" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
+  <project name="CyanogenMod/android_external_icu4c" path="external/icu4c" />
   <project name="CyanogenMod/android_external_iproute2" path="external/iproute2"/>
   <project name="CyanogenMod/android_external_ipsec-tools" path="external/ipsec-tools"/>
   <project name="CyanogenMod/android_external_iptables" path="external/iptables"/>
