@@ -136,7 +136,7 @@
   <!-- GalaxySl things -->
   
   <project path="device/samsung/galaxysl" name="dhiru1602/android_device_samsung_galaxysl" remote="github" revision="cm-11.0" />
-  <project path="device/vendor/galaxysl" name="dhiru1602/android_vendor_samsung_galaxysl" remote="github" revision="cm-11.0" />
+  <project path="vendor/samsung/galaxysl" name="dhiru1602/android_vendor_samsung_galaxysl" remote="github" revision="cm-11.0" />
   <project path="kernel/samsung/latona" name="dhiru1602/android_kernel_samsung_latona" remote="github" revision="cm-11.0" />
   <project path="hardware/ti/omap3" name="CyanogenMod/android_hardware_ti_omap3" remote="github" revision="cm-11.0" />
   <project path="hardware/ti/omap4xxx" name="CyanogenMod/android_hardware_ti_omap4xxx" remote="github" revision="cm-11.0" />
