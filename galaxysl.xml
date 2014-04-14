@@ -29,18 +29,18 @@
   <project name="apitrace" path="external/apitrace" remote="apitrace" revision="master"/>
 
   <!-- Stock Android things -->
-  <project path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" name="CyanogenMod/android_prebuilts_gcc/darwin-x86/arm/arm-eabi-4.7" remote="aosp" groups="pdk,darwin,arm" revision="refs/tags/android-4.4.2_r2" />
-  <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.7" name="CyanogenMod/android_prebuilts_gcc/darwin-x86/arm/arm-linux-androideabi-4.7" groups="pdk,darwin,arm" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
-  <project path="prebuilts/gcc/darwin-x86/host/headers" name="CyanogenMod/android_prebuilts_gcc/darwin-x86/host/headers" groups="pdk,darwin" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
-  <project path="prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" name="CyanogenMod/android_prebuilts_gcc/darwin-x86/host/i686-apple-darwin-4.2.1" groups="pdk,darwin" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
-  <project path="prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.7" name="CyanogenMod/android_prebuilts_gcc/darwin-x86/x86/i686-linux-android-4.7" groups="pdk,darwin,x86" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
-  <project path="prebuilts/python/darwin-x86/2.7.5" name="CyanogenMod/android_prebuilts_python/darwin-x86/2.7.5" groups="darwin" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
-  <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" name="CyanogenMod/android_prebuilts_gcc/linux-x86/host/i686-linux-glibc2.7-4.6" groups="linux" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
-  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" name="CyanogenMod/android_prebuilts_gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" groups="linux" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="CyanogenMod/android_prebuilts_gcc/linux-x86/arm/arm-eabi-4.7" groups="pdk,linux,arm" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="CyanogenMod/android_prebuilts_gcc/linux-x86/arm/arm-linux-androideabi-4.7" groups="pdk,linux,arm" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
-  <project path="prebuilts/gcc/linux-x86/x86/i686-linux-android-4.7" name="CyanogenMod/android_prebuilts_gcc/linux-x86/x86/i686-linux-android-4.7" groups="pdk,linux,x86" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
-  <project path="prebuilts/python/linux-x86/2.7.5" name="CyanogenMod/android_prebuilts_python/linux-x86/2.7.5" groups="linux" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
+  <project path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" remote="aosp" groups="pdk,darwin,arm" revision="refs/tags/android-4.4.2_r2" />
+  <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.7" name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.7" groups="pdk,darwin,arm" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
+  <project path="prebuilts/gcc/darwin-x86/host/headers" name="platform/prebuilts/gcc/darwin-x86/host/headers" groups="pdk,darwin" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
+  <project path="prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" groups="pdk,darwin" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
+  <project path="prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.7" name="platform/prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.7" groups="pdk,darwin,x86" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
+  <project path="prebuilts/python/darwin-x86/2.7.5" name="platform/prebuilts/python/darwin-x86/2.7.5" groups="darwin" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
+  <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" name="platform/android/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" groups="linux" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" groups="linux" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" groups="pdk,linux,arm" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" groups="pdk,linux,arm" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
+  <project path="prebuilts/gcc/linux-x86/x86/i686-linux-android-4.7" name="platform/prebuilts/gcc/linux-x86/x86/i686-linux-android-4.7" groups="pdk,linux,x86" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
+  <project path="prebuilts/python/linux-x86/2.7.5" name="platform/prebuilts_python/linux-x86/2.7.5" groups="linux" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
   <project name="CyanogenMod/android_device_common" path="device/common"/>
   <project name="CyanogenMod/android_device_sample" path="device/sample"/>
   <project name="CyanogenMod/android_abi_cpp" path="abi/cpp"/>
@@ -93,7 +93,7 @@
   <project name="CyanogenMod/android_external_safe-iop" path="external/safe-iop"/>
   <project name="CyanogenMod/android_external_scrypt" path="external/scrypt"/>
   <project name="CyanogenMod/android_external_sepolicy" path="external/sepolicy"/>
-  <project name="CyanogenMod/android_external_sfntly" path="external/sfntly"/>
+  <project path="external/sfntly" name="platform/external/sfntly" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
   <project name="CyanogenMod/android_external_skia" path="external/skia"/>
   <project name="CyanogenMod/android_external_sonivox" path="external/sonivox"/>
   <project name="CyanogenMod/android_external_speex" path="external/speex"/>
@@ -113,7 +113,7 @@
   <project name="CyanogenMod/android_external_zlib" path="external/zlib"/>
   <project name="CyanogenMod/android_frameworks_base" path="frameworks/base"/>
   <project name="CyanogenMod/android_frameworks_native" path="frameworks/native"/>
-  <project name="CyanogenMod/android_frameworks_opt/emoji" path="frameworks/opt/emoji"/>
+  <project name="CyanogenMod/android_frameworks_opt_emoji" path="frameworks/opt/emoji"/>
   <project name="CyanogenMod/android_frameworks_wilhelm" path="frameworks/wilhelm"/>
   <project name="CyanogenMod/android_hardware_libhardware" path="hardware/libhardware"/>
   <project name="CyanogenMod/android_hardware_libhardware_legacy" path="hardware/libhardware_legacy"/>
@@ -123,7 +123,7 @@
   <project name="CyanogenMod/android_prebuilts_misc" path="prebuilts/misc"/>
   <project name="CyanogenMod/android_prebuilts_ndk" path="prebuilts/ndk"/>
   <project name="CyanogenMod/android_prebuilts_qemu-kernel" path="prebuilts/qemu-kernel"/>
-  <project name="CyanogenMod/android_prebuilts_sdk" path="prebuilts/sdk"/>
+  <project path="prebuilts/sdk" name="platform/prebuilts/sdk" remote="aosp" revision="refs/tags/android-4.4.2_r2" groups="pdk" />
   <project name="CyanogenMod/android_prebuilts_tools" path="prebuilts/tools"/>
   <project name="CyanogenMod/android_system_extras" path="system/extras"/>
   <project name="CyanogenMod/android_system_media" path="system/media"/>
