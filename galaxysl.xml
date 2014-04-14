@@ -103,7 +103,7 @@
   <project name="CyanogenMod/android_external_svox" path="external/svox"/>
   <project name="CyanogenMod/android_external_tagsoup" path="external/tagsoup"/>
   <project name="CyanogenMod/android_external_tinyalsa" path="external/tinyalsa"/>
-  <project name="CyanogenMod/android_external_tinycompress" path="external/tinycompress"/>
+  <project path="external/tinycompress" name="platform/external/tinycompress" groups="pdk" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
   <project name="CyanogenMod/android_external_tinyxml" path="external/tinyxml"/>
   <project name="CyanogenMod/android_external_tinyxml2" path="external/tinyxml2"/>
   <project name="CyanogenMod/android_external_tremolo" path="external/tremolo"/>
@@ -144,5 +144,5 @@
   <project path="hardware/ti/wpan" name="CyanogenMod/android_hardware_ti_wpan" remote="github" revision="cm-11.0" />
   <project path="external/wpa_supplicant_8_ti" name="CyanogenMod/android_external_wpa_supplicant_8_ti" remote="github" revision="cm-11.0" />
   <project path="external/wpa_supplicant_8" name="CyanogenMod/android_external_wpa_supplicant_8" remote="github" revision="cm-11.0" />
-
+  <project path="prebuilt" name="CyanogenMod/android_prebuilt" />
 </manifest>
