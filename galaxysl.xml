@@ -8,6 +8,11 @@
   <remote fetch="git://codeaurora.org/" name="caf"/>
   <remote fetch="https://git.mozilla.org/releases" name="mozillaorg"/>
   <remote fetch=".." name="github" />
+  <default revision="refs/heads/cm-11.0"
+           remote="github"
+           sync-c="true"
+           sync-j="4" />
+
 
   <!-- B2G specific things. -->
   <project name="platform_build" path="build" remote="b2g" revision="b2g-4.4.2_r1">
@@ -24,107 +29,107 @@
   <project name="apitrace" path="external/apitrace" remote="apitrace" revision="master"/>
 
   <!-- Stock Android things -->
-  <project path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" remote="aosp" groups="pdk,darwin,arm" revision="refs/tags/android-4.4.2_r2" />
-  <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.7" name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.7" groups="pdk,darwin,arm" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
-  <project path="prebuilts/gcc/darwin-x86/host/headers" name="platform/prebuilts/gcc/darwin-x86/host/headers" groups="pdk,darwin" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
-  <project path="prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" groups="pdk,darwin" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
-  <project path="prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.7" name="platform/prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.7" groups="pdk,darwin,x86" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
-  <project path="prebuilts/python/darwin-x86/2.7.5" name="platform/prebuilts/python/darwin-x86/2.7.5" groups="darwin" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
-  <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" groups="linux" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
-  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" groups="linux" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" groups="pdk,linux,arm" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" groups="pdk,linux,arm" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
-  <project path="prebuilts/gcc/linux-x86/x86/i686-linux-android-4.7" name="platform/prebuilts/gcc/linux-x86/x86/i686-linux-android-4.7" groups="pdk,linux,x86" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
-  <project path="prebuilts/python/linux-x86/2.7.5" name="platform/prebuilts/python/linux-x86/2.7.5" groups="linux" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
-  <project name="device/common" path="device/common"/>
-  <project name="device/sample" path="device/sample"/>
-  <project name="platform/abi/cpp" path="abi/cpp"/>
-  <project name="platform/bionic" path="bionic"/>
-  <project name="platform/bootable/recovery" path="bootable/recovery" remote="github" revision="cm-11.0"/>
-  <project name="platform/external/aac" path="external/aac"/>
-  <project name="platform/external/bison" path="external/bison"/>
-  <project name="platform/external/bluetooth/bluedroid" path="external/bluetooth/bluedroid"/>
-  <project name="platform/external/bsdiff" path="external/bsdiff"/>
-  <project name="platform/external/bzip2" path="external/bzip2"/>
-  <project name="platform/external/checkpolicy" path="external/checkpolicy"/>
-  <project name="platform/external/dhcpcd" path="external/dhcpcd"/>
-  <project name="platform/external/dnsmasq" path="external/dnsmasq"/>
-  <project name="platform/external/dropbear" path="external/dropbear"/>
-  <project name="platform/external/e2fsprogs" path="external/e2fsprogs"/>
-  <project name="platform/external/elfutils" path="external/elfutils"/>
-  <project name="platform/external/expat" path="external/expat"/>
-  <project name="platform/external/fdlibm" path="external/fdlibm"/>
-  <project name="platform/external/flac" path="external/flac"/>
-  <project name="platform/external/freetype" path="external/freetype"/>
-  <project name="platform/external/gcc-demangle" path="external/gcc-demangle"/>
-  <project name="platform/external/genext2fs" path="external/genext2fs"/>
-  <project name="platform/external/giflib" path="external/giflib"/>
-  <project name="platform/external/gtest" path="external/gtest"/>
-  <project name="platform/external/harfbuzz" path="external/harfbuzz"/>
-  <project name="platform/external/harfbuzz_ng" path="external/harfbuzz_ng"/>
-  <project name="platform/external/icu4c" path="external/icu4c" remote="aosp"/>
-  <project name="platform/external/iproute2" path="external/iproute2"/>
-  <project name="platform/external/ipsec-tools" path="external/ipsec-tools"/>
-  <project name="platform/external/iptables" path="external/iptables"/>
-  <project name="platform/external/jack" path="external/jack"/>
-  <project name="platform/external/jhead" path="external/jhead"/>
-  <project name="platform/external/jpeg" path="external/jpeg"/>
-  <project name="platform/external/junit" path="external/junit"/>
-  <project name="platform/external/libgsm" path="external/libgsm"/>
-  <project name="platform/external/liblzf" path="external/liblzf"/>
-  <project name="platform/external/libnfc-nxp" path="external/libnfc-nxp"/>
-  <project name="platform/external/libnl-headers" path="external/libnl-headers"/>
-  <project name="platform/external/libogg" path="external/libogg"/>
-  <project name="platform/external/libpng" path="external/libpng"/>
-  <project name="platform/external/libselinux" path="external/libselinux"/>
-  <project name="platform/external/libsepol" path="external/libsepol"/>
-  <project name="platform/external/libvpx" path="external/libvpx"/>
-  <project name="platform/external/mdnsresponder" path="external/mdnsresponder"/>
-  <project name="platform/external/mksh" path="external/mksh"/>
-  <project name="platform/external/netcat" path="external/netcat"/>
-  <project name="platform/external/netperf" path="external/netperf"/>
-  <project name="platform/external/openssl" path="external/openssl"/>
-  <project name="platform/external/protobuf" path="external/protobuf"/>
-  <project name="platform/external/safe-iop" path="external/safe-iop"/>
-  <project name="platform/external/scrypt" path="external/scrypt"/>
-  <project name="platform/external/sepolicy" path="external/sepolicy"/>
-  <project name="platform/external/sfntly" path="external/sfntly"/>
-  <project name="platform/external/skia" path="external/skia"/>
-  <project name="platform/external/sonivox" path="external/sonivox"/>
-  <project name="platform/external/speex" path="external/speex"/>
-  <project name="platform/external/sqlite" path="external/sqlite"/>
-  <project name="platform/external/stlport" path="external/stlport"/>
-  <project name="platform/external/strace" path="external/strace"/>
-  <project name="platform/external/svox" path="external/svox"/>
-  <project name="platform/external/tagsoup" path="external/tagsoup"/>
-  <project name="platform/external/tinyalsa" path="external/tinyalsa"/>
-  <project name="platform/external/tinycompress" path="external/tinycompress"/>
-  <project name="platform/external/tinyxml" path="external/tinyxml"/>
-  <project name="platform/external/tinyxml2" path="external/tinyxml2"/>
-  <project name="platform/external/tremolo" path="external/tremolo"/>
-  <project name="platform/external/webp" path="external/webp"/>
-  <project name="platform/external/webrtc" path="external/webrtc"/>
-  <project name="platform/external/yaffs2" path="external/yaffs2"/>
-  <project name="platform/external/zlib" path="external/zlib"/>
-  <project name="platform/frameworks/base" path="frameworks/base"/>
-  <project name="platform/frameworks/native" path="frameworks/native"/>
-  <project name="platform/frameworks/opt/emoji" path="frameworks/opt/emoji"/>
-  <project name="platform/frameworks/wilhelm" path="frameworks/wilhelm"/>
-  <project name="platform/hardware/libhardware" path="hardware/libhardware"/>
-  <project name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy"/>
-  <project name="platform/libcore" path="libcore"/>
-  <project name="platform/libnativehelper" path="libnativehelper"/>
-  <project name="platform/ndk" path="ndk"/>
-  <project name="platform/prebuilts/misc" path="prebuilts/misc"/>
-  <project name="platform/prebuilts/ndk" path="prebuilts/ndk"/>
-  <project name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel"/>
-  <project name="platform/prebuilts/sdk" path="prebuilts/sdk"/>
-  <project name="platform/prebuilts/tools" path="prebuilts/tools"/>
-  <project name="platform/system/extras" path="system/extras"/>
-  <project name="platform/system/media" path="system/media"/>
-  <project name="platform/system/netd" path="system/netd"/>
-  <project name="platform/system/security" path="system/security"/>
-  <project name="platform/system/vold" path="system/vold"/>
+  <project path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" name="CyanogenMod/android_prebuilts_gcc/darwin-x86/arm/arm-eabi-4.7" remote="aosp" groups="pdk,darwin,arm" revision="refs/tags/android-4.4.2_r2" />
+  <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.7" name="CyanogenMod/android_prebuilts_gcc/darwin-x86/arm/arm-linux-androideabi-4.7" groups="pdk,darwin,arm" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
+  <project path="prebuilts/gcc/darwin-x86/host/headers" name="CyanogenMod/android_prebuilts_gcc/darwin-x86/host/headers" groups="pdk,darwin" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
+  <project path="prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" name="CyanogenMod/android_prebuilts_gcc/darwin-x86/host/i686-apple-darwin-4.2.1" groups="pdk,darwin" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
+  <project path="prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.7" name="CyanogenMod/android_prebuilts_gcc/darwin-x86/x86/i686-linux-android-4.7" groups="pdk,darwin,x86" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
+  <project path="prebuilts/python/darwin-x86/2.7.5" name="CyanogenMod/android_prebuilts_python/darwin-x86/2.7.5" groups="darwin" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
+  <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" name="CyanogenMod/android_prebuilts_gcc/linux-x86/host/i686-linux-glibc2.7-4.6" groups="linux" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" name="CyanogenMod/android_prebuilts_gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" groups="linux" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="CyanogenMod/android_prebuilts_gcc/linux-x86/arm/arm-eabi-4.7" groups="pdk,linux,arm" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="CyanogenMod/android_prebuilts_gcc/linux-x86/arm/arm-linux-androideabi-4.7" groups="pdk,linux,arm" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
+  <project path="prebuilts/gcc/linux-x86/x86/i686-linux-android-4.7" name="CyanogenMod/android_prebuilts_gcc/linux-x86/x86/i686-linux-android-4.7" groups="pdk,linux,x86" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
+  <project path="prebuilts/python/linux-x86/2.7.5" name="CyanogenMod/android_prebuilts_python/linux-x86/2.7.5" groups="linux" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
+  <project name="CyanogenMod/android_device_common" path="device/common"/>
+  <project name="CyanogenMod/android_device_sample" path="device/sample"/>
+  <project name="CyanogenMod/android_abi_cpp" path="abi/cpp"/>
+  <project name="CyanogenMod/android_bionic" path="bionic"/>
+  <project name="CyanogenMod/android_bootable_recovery" path="bootable/recovery" remote="github" revision="cm-11.0"/>
+  <project name="CyanogenMod/android_external_aac" path="external/aac"/>
+  <project name="CyanogenMod/android_external_bison" path="external/bison"/>
+  <project name="CyanogenMod/android_external_bluetooth/bluedroid" path="external/bluetooth/bluedroid"/>
+  <project name="CyanogenMod/android_external_bsdiff" path="external/bsdiff"/>
+  <project name="CyanogenMod/android_external_bzip2" path="external/bzip2"/>
+  <project name="CyanogenMod/android_external_checkpolicy" path="external/checkpolicy"/>
+  <project name="CyanogenMod/android_external_dhcpcd" path="external/dhcpcd"/>
+  <project name="CyanogenMod/android_external_dnsmasq" path="external/dnsmasq"/>
+  <project name="CyanogenMod/android_external_dropbear" path="external/dropbear"/>
+  <project name="CyanogenMod/android_external_e2fsprogs" path="external/e2fsprogs"/>
+  <project name="CyanogenMod/android_external_elfutils" path="external/elfutils"/>
+  <project name="CyanogenMod/android_external_expat" path="external/expat"/>
+  <project name="CyanogenMod/android_external_fdlibm" path="external/fdlibm"/>
+  <project name="CyanogenMod/android_external_flac" path="external/flac"/>
+  <project name="CyanogenMod/android_external_freetype" path="external/freetype"/>
+  <project name="CyanogenMod/android_external_gcc-demangle" path="external/gcc-demangle"/>
+  <project name="CyanogenMod/android_external_genext2fs" path="external/genext2fs"/>
+  <project name="CyanogenMod/android_external_giflib" path="external/giflib"/>
+  <project name="CyanogenMod/android_external_gtest" path="external/gtest"/>
+  <project name="CyanogenMod/android_external_harfbuzz" path="external/harfbuzz"/>
+  <project name="CyanogenMod/android_external_harfbuzz_ng" path="external/harfbuzz_ng"/>
+  <project name="CyanogenMod/android_external_icu4c" path="external/icu4c" remote="aosp"/>
+  <project name="CyanogenMod/android_external_iproute2" path="external/iproute2"/>
+  <project name="CyanogenMod/android_external_ipsec-tools" path="external/ipsec-tools"/>
+  <project name="CyanogenMod/android_external_iptables" path="external/iptables"/>
+  <project name="CyanogenMod/android_external_jack" path="external/jack"/>
+  <project name="CyanogenMod/android_external_jhead" path="external/jhead"/>
+  <project name="CyanogenMod/android_external_jpeg" path="external/jpeg"/>
+  <project name="CyanogenMod/android_external_junit" path="external/junit"/>
+  <project name="CyanogenMod/android_external_libgsm" path="external/libgsm"/>
+  <project name="CyanogenMod/android_external_liblzf" path="external/liblzf"/>
+  <project name="CyanogenMod/android_external_libnfc-nxp" path="external/libnfc-nxp"/>
+  <project name="CyanogenMod/android_external_libnl-headers" path="external/libnl-headers"/>
+  <project name="CyanogenMod/android_external_libogg" path="external/libogg"/>
+  <project name="CyanogenMod/android_external_libpng" path="external/libpng"/>
+  <project name="CyanogenMod/android_external_libselinux" path="external/libselinux"/>
+  <project name="CyanogenMod/android_external_libsepol" path="external/libsepol"/>
+  <project name="CyanogenMod/android_external_libvpx" path="external/libvpx"/>
+  <project name="CyanogenMod/android_external_mdnsresponder" path="external/mdnsresponder"/>
+  <project name="CyanogenMod/android_external_mksh" path="external/mksh"/>
+  <project name="CyanogenMod/android_external_netcat" path="external/netcat"/>
+  <project name="CyanogenMod/android_external_netperf" path="external/netperf"/>
+  <project name="CyanogenMod/android_external_openssl" path="external/openssl"/>
+  <project name="CyanogenMod/android_external_protobuf" path="external/protobuf"/>
+  <project name="CyanogenMod/android_external_safe-iop" path="external/safe-iop"/>
+  <project name="CyanogenMod/android_external_scrypt" path="external/scrypt"/>
+  <project name="CyanogenMod/android_external_sepolicy" path="external/sepolicy"/>
+  <project name="CyanogenMod/android_external_sfntly" path="external/sfntly"/>
+  <project name="CyanogenMod/android_external_skia" path="external/skia"/>
+  <project name="CyanogenMod/android_external_sonivox" path="external/sonivox"/>
+  <project name="CyanogenMod/android_external_speex" path="external/speex"/>
+  <project name="CyanogenMod/android_external_sqlite" path="external/sqlite"/>
+  <project name="CyanogenMod/android_external_stlport" path="external/stlport"/>
+  <project name="CyanogenMod/android_external_strace" path="external/strace"/>
+  <project name="CyanogenMod/android_external_svox" path="external/svox"/>
+  <project name="CyanogenMod/android_external_tagsoup" path="external/tagsoup"/>
+  <project name="CyanogenMod/android_external_tinyalsa" path="external/tinyalsa"/>
+  <project name="CyanogenMod/android_external_tinycompress" path="external/tinycompress"/>
+  <project name="CyanogenMod/android_external_tinyxml" path="external/tinyxml"/>
+  <project name="CyanogenMod/android_external_tinyxml2" path="external/tinyxml2"/>
+  <project name="CyanogenMod/android_external_tremolo" path="external/tremolo"/>
+  <project name="CyanogenMod/android_external_webp" path="external/webp"/>
+  <project name="CyanogenMod/android_external_webrtc" path="external/webrtc"/>
+  <project name="CyanogenMod/android_external_yaffs2" path="external/yaffs2"/>
+  <project name="CyanogenMod/android_external_zlib" path="external/zlib"/>
+  <project name="CyanogenMod/android_frameworks_base" path="frameworks/base"/>
+  <project name="CyanogenMod/android_frameworks_native" path="frameworks/native"/>
+  <project name="CyanogenMod/android_frameworks_opt/emoji" path="frameworks/opt/emoji"/>
+  <project name="CyanogenMod/android_frameworks_wilhelm" path="frameworks/wilhelm"/>
+  <project name="CyanogenMod/android_hardware_libhardware" path="hardware/libhardware"/>
+  <project name="CyanogenMod/android_hardware_libhardware_legacy" path="hardware/libhardware_legacy"/>
+  <project name="CyanogenMod/android_libcore" path="libcore"/>
+  <project name="CyanogenMod/android_libnativehelper" path="libnativehelper"/>
+  <project name="CyanogenMod/android_ndk" path="ndk"/>
+  <project name="CyanogenMod/android_prebuilts_misc" path="prebuilts/misc"/>
+  <project name="CyanogenMod/android_prebuilts_ndk" path="prebuilts/ndk"/>
+  <project name="CyanogenMod/android_prebuilts_qemu-kernel" path="prebuilts/qemu-kernel"/>
+  <project name="CyanogenMod/android_prebuilts_sdk" path="prebuilts/sdk"/>
+  <project name="CyanogenMod/android_prebuilts_tools" path="prebuilts/tools"/>
+  <project name="CyanogenMod/android_system_extras" path="system/extras"/>
+  <project name="CyanogenMod/android_system_media" path="system/media"/>
+  <project name="CyanogenMod/android_system_netd" path="system/netd"/>
+  <project name="CyanogenMod/android_system_security" path="system/security"/>
+  <project name="CyanogenMod/android_system_vold" path="system/vold"/>
   <project name="platform_frameworks_av" path="frameworks/av" remote="b2g" revision="b2g-4.4.2_r1"/>
   <project name="platform_system_core" path="system/core" remote="b2g" revision="b2g-4.4.2_r1"/>
 
