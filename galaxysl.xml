@@ -48,7 +48,7 @@
   <project name="CyanogenMod/android_bootable_recovery" path="bootable/recovery" remote="github" revision="cm-11.0"/>
   <project name="CyanogenMod/android_external_aac" path="external/aac"/>
   <project name="CyanogenMod/android_external_bison" path="external/bison"/>
-  <project name="CyanogenMod/android_external_bluetooth/bluedroid" path="external/bluetooth/bluedroid"/>
+  <project name="CyanogenMod/android_external_bluetooth_bluedroid" path="external/bluetooth/bluedroid"/>
   <project name="CyanogenMod/android_external_bsdiff" path="external/bsdiff"/>
   <project name="CyanogenMod/android_external_bzip2" path="external/bzip2"/>
   <project name="CyanogenMod/android_external_checkpolicy" path="external/checkpolicy"/>
@@ -91,7 +91,7 @@
   <project name="CyanogenMod/android_external_openssl" path="external/openssl"/>
   <project name="CyanogenMod/android_external_protobuf" path="external/protobuf"/>
   <project name="CyanogenMod/android_external_safe-iop" path="external/safe-iop"/>
-  <project name="CyanogenMod/android_external_scrypt" path="external/scrypt"/>
+  <project path="external/scrypt" name="platform/external/scrypt" groups="pdk" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
   <project name="CyanogenMod/android_external_sepolicy" path="external/sepolicy"/>
   <project path="external/sfntly" name="platform/external/sfntly" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
   <project name="CyanogenMod/android_external_skia" path="external/skia"/>
@@ -122,9 +122,9 @@
   <project name="CyanogenMod/android_ndk" path="ndk"/>
   <project name="CyanogenMod/android_prebuilts_misc" path="prebuilts/misc"/>
   <project name="CyanogenMod/android_prebuilts_ndk" path="prebuilts/ndk"/>
-  <project name="CyanogenMod/android_prebuilts_qemu-kernel" path="prebuilts/qemu-kernel"/>
+  <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" remote="aosp" revision="refs/tags/android-4.4.2_r2" groups="pdk" />
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" remote="aosp" revision="refs/tags/android-4.4.2_r2" groups="pdk" />
-  <project name="CyanogenMod/android_prebuilts_tools" path="prebuilts/tools"/>
+  <project path="prebuilts/tools" name="platform/prebuilts/tools" remote="aosp" revision="refs/tags/android-4.4.2_r2" groups="pdk,tools" />
   <project name="CyanogenMod/android_system_extras" path="system/extras"/>
   <project name="CyanogenMod/android_system_media" path="system/media"/>
   <project name="CyanogenMod/android_system_netd" path="system/netd"/>
