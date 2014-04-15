@@ -119,7 +119,7 @@
   <project name="CyanogenMod/android_hardware_libhardware_legacy" path="hardware/libhardware_legacy"/>
   <project name="CyanogenMod/android_libcore" path="libcore"/>
   <project name="CyanogenMod/android_libnativehelper" path="libnativehelper"/>
-  <project name="CyanogenMod/android_ndk" path="ndk"/>
+  <project path="ndk" name="platform/ndk" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
   <project name="CyanogenMod/android_prebuilts_misc" path="prebuilts/misc"/>
   <project path="prebuilts/ndk" name="platform/prebuilts/ndk" remote="aosp" revision="refs/tags/android-4.4.2_r2" groups="pdk" />
   <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" remote="aosp" revision="refs/tags/android-4.4.2_r2" groups="pdk" />
