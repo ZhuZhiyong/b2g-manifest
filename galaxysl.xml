@@ -121,7 +121,7 @@
   <project name="CyanogenMod/android_libnativehelper" path="libnativehelper"/>
   <project name="CyanogenMod/android_ndk" path="ndk"/>
   <project name="CyanogenMod/android_prebuilts_misc" path="prebuilts/misc"/>
-  <project name="CyanogenMod/android_prebuilts_ndk" path="prebuilts/ndk"/>
+  <project path="prebuilts/ndk" name="platform/prebuilts/ndk" remote="aosp" revision="refs/tags/android-4.4.2_r2" groups="pdk" />
   <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" remote="aosp" revision="refs/tags/android-4.4.2_r2" groups="pdk" />
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" remote="aosp" revision="refs/tags/android-4.4.2_r2" groups="pdk" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" remote="aosp" revision="refs/tags/android-4.4.2_r2" groups="pdk,tools" />
